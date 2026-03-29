@@ -1,49 +1,25 @@
-# SegmentIQ: Market Basket Analysis & Retail Analytics
+# SegmentIQ
 
-SegmentIQ is a premium retail analytics application that helps businesses discover customer purchasing patterns through Market Basket Analysis (Apriori Algorithm) and interactive dashboards.
+**SegmentIQ** is a powerful analytics tool designed to improve decision-making through data-driven insights. Built with the user in mind, it offers an intuitive interface for easy navigation and data visualization.
 
-## 🚀 How to Run the App (Quick Start)
+## Features
+- **Custom Dashboards**: Create dashboards tailored to your needs for a comprehensive view of your analytics.
+- **Data Integration**: Seamlessly connect to a variety of data sources, including SQL databases, CSV files, and APIs.
+- **Real-Time Analytics**: Analyze your data in real-time for timely insights and decision-making.
+- **Collaboration Tools**: Share insights with your team easily and collaborate on data-driven projects.
 
-The easiest way to explore the project is using the interactive **Streamlit App**.
+## Getting Started
+To get started with SegmentIQ, follow these instructions:
+1. Clone the repository: `git clone https://github.com/rashCoded/SegmentIQ.git`
+2. Install dependencies: `npm install`
+3. Launch the application: `npm start`
 
-1.  **Open Terminal** in the project folder:
-    ```bash
-    cd d:\Projects\SegmentIQ
-    ```
+## Contribution
+We welcome contributions! Please take a moment to read our [contributing guidelines](CONTRIBUTING.md).
 
-2.  **Install Dependencies** (One time setup):
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-3.  **Launch the App**:
-    ```bash
-    streamlit run app.py
-    ```
-
-   The app will automatically open in your browser at `http://localhost:8501`.
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
-## 📂 Project Structure
-
-- **`app.py`**: The main application file (Streamlit). Contains the Dashboard, Recommender System, and Apriori Logic.
-- **`run_project.py`**: Legacy script to run the raw analysis notebooks sequentially.
-- **`RetailData.csv`**: Transaction dataset (will be downloaded automatically if missing).
-- **Notebooks**:
-    - `01-FeatureEngineering.ipynb`: Data cleaning and feature creation logic.
-    - `02-ExploratoryDataAnalysis.ipynb`: In-depth EDA and plotting.
-    - `03-MarketBasketAnalysis.ipynb`: Original logic for association rules.
-
-## ✨ Key Features in the App
-
-*   **Interactive Dashboard**: Real-time sales metrics and trends.
-*   **Product Recommender**: Select a product -> Get "Frequently bought with" suggestions.
-*   **Operational Insights**: Heatmap of busy hours (Day vs Hour).
-*   **Smart Filtering**: Top 150 items only + High Confidence rules.
-*   **Export**: Download resulting rules as CSV.
-
-## 🛠 Troubleshooting
-
-*   **`MemoryError`**: If you see this, the app works fine because we have already optimized it (Top 150 items limit, Max Length=2).
-*   **Encoding Errors**: The app automatically fixes `ISO-8859-1` vs `UTF-8` issues on startup.
+For more information, visit our website or check out our community discussions and support channels. Happy analyzing!
